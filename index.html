@@ -11,17 +11,28 @@
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+
+    <style>
+        label{
+            color: white;
+            font-weight: bold;
+        }
+        button{
+            font-weight: bold;
+        }
+    </style>
+
     <title>Product List</title>
   </head>
   <body class="bg-info">
-    <div class="container col-md-8 bg-success m-auto p-5 mt-5 shadow"> 
+    <div class="container col-md-10 col-lg-8 bg-success m-auto mt-5 pb-5 pt-5 shadow"> 
         <form class="row g-3">
-            <div class="col-md-2">
-              <label for="inputSlNo4" class="form-label">Sl No.</label>
+            <div class="col-md-2 col-lg-2">
+              <label for="inputSlNo4" class="form-label">Sl No :</label>
               <input type="text" class="form-control" id="inputSlNo4">
             </div>
-            <div class="col-md-3">
-              <label for="inputSelect" class="form-label">Product</label>
+            <div class="col-md-3 col-lg-3">
+              <label for="inputSelect" class="form-label">Product :</label>
               <select class="form-select" id="inputSelect">
                 <option value="">select</option>
                 <option value="Smartphone">Smartphone</option>
@@ -32,22 +43,22 @@
                 <option value="Smart T.V.">Smart T.V</option>
               </select>
             </div>
-            <div class="col-md-2">
-              <label for="inputPrice" class="form-label">Price</label>
+            <div class="col-md-2 col-lg-2">
+              <label for="inputPrice" class="form-label">Price :</label>
               <input type="text" class="form-control" id="inputPrice" placeholder="Price">
             </div>
-            <div class="col-md-2">
-              <label for="inputQty" class="form-label">Quantity</label>
+            <div class="col-md-2 col-lg-2">
+              <label for="inputQty" class="form-label">Quantity :</label>
               <input type="text" class="form-control" id="inputQty" placeholder="eg: 1">
             </div>
-            <div class="col-md-3">
-              <label for="inputTotal" class="form-label">Total Price</label>
+            <div class="col-md-3 col-lg-3">
+              <label for="inputTotal" class="form-label">Total Price :</label>
               <input type="text" class="form-control" id="inputTotal" disabled>
             </div>
             
             <div class="col-12 d-flex justify-content-center">
-              <button type="button" class="btn btn-primary me-2" id="addBtn">Add</button>
-              <button type="reset" class="btn btn-primary" id="resetBtn">Reset</button>
+              <button type="button" class="btn btn-danger me-2 pe-4 ps-4 shadow" id="addBtn">Add</button>
+              <button type="reset" class="btn btn-danger pe-3 ps-3 shadow" id="resetBtn">Reset</button>
             </div>
           </form>
 
