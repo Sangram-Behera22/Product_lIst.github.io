@@ -11,7 +11,8 @@
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         label{
             color: white;
@@ -69,7 +70,7 @@
                 <th scope="col">Product Name</th>
                 <th scope="col">Price</th>
                 <th scope="col">Qty</th>
-                <th scope="col">Total Price</th>
+                <th scope="col" colspan="2">Total Price</th>
               </tr>
             </thead>
             <tbody id="tbody">
@@ -79,7 +80,7 @@
             <tfoot >
                 <tr>
                     <td colspan="4" class="text-end">Tatal Price :</td>
-                    <td id="tprice"></td>
+                    <td id="tprice" colspan="2"></td>
                 </tr>
                 
                 

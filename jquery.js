@@ -5,10 +5,10 @@ $(document).ready(function(){
     const inputQty =$("#inputQty");
     let inputTotal = $("#inputTotal");
     const Display = $("#Display");
-    $("#resetBtn").click(function()
-    {
-        Display.hide();
-    });
+    // $("#resetBtn").click(function()
+    // {
+    //     Display.hide();
+    // });
     
     Display.hide();
    $("#addBtn").click(function(){
@@ -38,13 +38,20 @@ $(document).ready(function(){
      Display.show();
    
      
-     $("#tbody").append(`<tr>
+     $("#tbody").append(`<tr class="tableRow">
                            <td>${valid.val()}</td>
                            <td>${inputSelect.val()}</td>
                            <td>${inputPrice.val()}</td>
                            <td>${inputQty.val()}</td>
                            <td class="sam">${inputTotal.val()}</td>
+                           <td><a href="#" class="text-danger trash"><i class="fa fa-trash" aria-hidden="true" ></i><a/></td>
                         <tr>`)
+
+     let trash = $('.trash');
+     trash.click(function(){
+     $(this).parentsUntil("tbody").remove();
+     total_price();
+       })                   
    total_price();
  
  })
@@ -90,6 +97,8 @@ $(document).ready(function(){
       })
       
      
+    
+
 
   });
 
